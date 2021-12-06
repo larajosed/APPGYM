@@ -1,0 +1,90 @@
+.hero{
+   background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/08/21/15348461218161.jpg);
+    background-color: #999;
+    background-blend-mode: multiply;
+    height: 45vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+
+h1{
+    font-family: 'Merienda One', cursive;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 30px;
+    width: 600px;
+    
+
+}
+
+.hero h3 {
+   font-family: 'Merienda One', cursive;
+   color: white;
+   margin-top: 35px;
+  
+}
+
+.hero p{
+    font-family: 'Fuzzy Bubbles';
+    color:white;
+    font-size: 18px;
+    width: 500px;
+    margin-top: 45px;
+}
+.hero p span{
+      color:rgb(241, 121, 0);
+      font-size: 20px;
+}
+
+/*inicio del main */
+.main{
+    display: inline-block;
+}
+
+
+.info{
+    text-align: center;
+    position: relative;
+}
+
+
+.info h3{
+     font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0;   
+    width: 600px;
+}
+
+.info p{
+    line-height: 25px;
+    padding: 10px 0;
+    width: 600px;
+}
+
+.info1{
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+
+.info1 h3{
+     font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0;   
+    width: 600px;
+}
+
+.info1 p{
+    line-height: 25px;
+    padding: 10px 0;
+    width: 600px;
+}
+
+.iconos1{
+ width: 100px;
+  
+
+}
