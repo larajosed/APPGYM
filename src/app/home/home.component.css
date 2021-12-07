@@ -40,13 +40,14 @@ h1{
 
 /*inicio del main */
 .main{
-    display: inline-block;
+   
 }
 
 
 .info{
     text-align: center;
     position: relative;
+    display: inline-block;
 }
 
 
@@ -55,18 +56,22 @@ h1{
     font-weight: 700;
     padding: 10px 0;   
     width: 600px;
+   
+   
 }
 
 .info p{
     line-height: 25px;
     padding: 10px 0;
     width: 600px;
+    
 }
 
 .info1{
     text-align: center;
-    display: block;
     position: relative;
+    display: inline-block;
+    align-items: center;
 }
 
 
@@ -75,16 +80,62 @@ h1{
     font-weight: 700;
     padding: 10px 0;   
     width: 600px;
+    
 }
 
 .info1 p{
     line-height: 25px;
     padding: 10px 0;
     width: 600px;
+    
 }
 
 .iconos1{
  width: 100px;
+ display: inline-block;
+ margin-top: 5px;
   
 
 }
+
+.containerColum{
+background-color: rgb(241, 239, 239);
+}
+.containerColum h3{
+    text-align: center;
+}
+
+.containerColum p{
+    text-align: center;
+}
+
+.containerColum h2{
+    text-align: center;
+}
+
+.containerColum .phoneApp{
+    width: 600px;
+}
+
+/* inicio footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em 0.625em;
+    text-align: center;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(241, 121, 0);
+}
+
+
