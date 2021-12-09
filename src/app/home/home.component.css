@@ -26,6 +26,7 @@ h1{
   
 }
 
+
 .hero p{
     font-family: 'Fuzzy Bubbles';
     color:white;
@@ -39,58 +40,25 @@ h1{
 }
 
 /*inicio del main */
-.main{
-   
+
+.titulo {
+    text-align: center;
+    margin-top: 40px;
+     font-size: 14px;
+}
+.section-title h2{
+    width: 500px;
 }
 
-
-.info{
+#info{
     text-align: center;
     position: relative;
     display: inline-block;
+    padding: 40px;
 }
 
 
-.info h3{
-     font-size: 18px;
-    font-weight: 700;
-    padding: 10px 0;   
-    width: 600px;
-   
-   
-}
-
-.info p{
-    line-height: 25px;
-    padding: 10px 0;
-    width: 600px;
-    
-}
-
-.info1{
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    align-items: center;
-}
-
-
-.info1 h3{
-     font-size: 18px;
-    font-weight: 700;
-    padding: 10px 0;   
-    width: 600px;
-    
-}
-
-.info1 p{
-    line-height: 25px;
-    padding: 10px 0;
-    width: 600px;
-    
-}
-
-.iconos1{
+#iconos1{
  width: 100px;
  display: inline-block;
  margin-top: 5px;
@@ -103,20 +71,83 @@ background-color: rgb(241, 239, 239);
 }
 .containerColum h3{
     text-align: center;
+    margin-top: 10px;
 }
 
 .containerColum p{
     text-align: center;
+    padding: 20px;
 }
 
 .containerColum h2{
     text-align: center;
 }
 
-.containerColum .phoneApp{
-    width: 600px;
+.containerColum h2:hover{
+    color: rgb(241, 121, 0);
 }
 
+.containerColum .phoneApp{
+    width: 500px;
+    margin-bottom: 30px;
+    margin-left: 100px;   
+}
+
+.containerClientes{
+padding: 30px;
+
+}
+.containerClientes h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 30px;
+}
+
+.containerClientes p{
+    text-align: center;
+    padding: 10px;
+}
+
+.containerClientes #fotoCliente{
+    width: 170px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 100%;
+   margin-left: 730px;
+   }
+
+.cliente-info h3{
+       text-align: center;
+       font-weight: 8px bold;
+   }
+
+.contactoClientes {
+       background-color: black;
+       color: white;
+       margin-bottom: 71px;
+   }
+.contactoClientes h2{
+    padding: 20px;
+    margin-left: 50px ;
+}
+
+   .contactoClientes #contacto{
+       width: 40px;
+       position: absolute;
+       margin: 10px;
+       margin-left: 20px;
+   }
+   
+   .contactoClientes p{
+       margin-left: 70px;
+       padding: 5px;
+       margin-top: 20px;
+       margin-bottom: 50px;
+   }
+
+    .contactoClientes p:hover{
+        color: rgb(241, 121, 0);
+    }
 /* inicio footer */
 
 footer {
