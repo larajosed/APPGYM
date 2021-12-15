@@ -12,6 +12,8 @@ import { RegistroComponent } from './usuarios/registro/registro.component';
 import { LoginComponent } from './usuarios/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { ModalComponent } from './modal/modal.component';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { HomeComponent } from './home/home.component';
     RegistroComponent,
     LoginComponent,
     HomeComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,

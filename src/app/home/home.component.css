@@ -1,3 +1,5 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 .hero{
    background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/08/21/15348461218161.jpg);
     background-color: #999;
@@ -90,7 +92,6 @@ background-color: rgb(241, 239, 239);
 .containerColum .phoneApp{
     width: 500px;
     margin-bottom: 30px;
-    margin-left: 100px;   
 }
 
 .containerClientes{
@@ -113,7 +114,7 @@ padding: 30px;
     padding: 15px;
     border: 1px solid black;
     border-radius: 100%;
-   margin-left: 730px;
+   margin-left: 580px;
    }
 
 .cliente-info h3{
@@ -125,29 +126,18 @@ padding: 30px;
        background-color: black;
        color: white;
        margin-bottom: 71px;
+       padding: 30px;
    }
-.contactoClientes h2{
-    padding: 20px;
-    margin-left: 50px ;
-}
 
-   .contactoClientes #contacto{
+
+.contactoClientes i{
        width: 40px;
-       position: absolute;
-       margin: 10px;
-       margin-left: 20px;
+       padding: 5px;
+       height: 30px;
+       font-weight: 10px;
+       font-size: 20px;
    }
    
-   .contactoClientes p{
-       margin-left: 70px;
-       padding: 5px;
-       margin-top: 20px;
-       margin-bottom: 50px;
-   }
-
-    .contactoClientes p:hover{
-        color: rgb(241, 121, 0);
-    }
 /* inicio footer */
 
 footer {
