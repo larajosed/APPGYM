@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './modal/modal.component';
 import { ListaEjerciciosComponent } from './lista-ejercicios/lista-ejercicios.component';
+import { EjerciciosRutinaComponent } from './ejercicios-rutina/ejercicios-rutina.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ListaEjerciciosComponent } from './lista-ejercicios/lista-ejercicios.co
     HomeComponent,
     ModalComponent,
     ListaEjerciciosComponent,
+    EjerciciosRutinaComponent,
   ],
   imports: [
     BrowserModule,

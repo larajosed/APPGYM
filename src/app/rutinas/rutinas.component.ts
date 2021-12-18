@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Routines, RutinasService } from '../servicios/rutinas.service';
 
 @Component({
   selector: 'app-rutinas',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RutinasComponent implements OnInit {
 
-  constructor() { }
+  routines: Routines[];
+
+  constructor(private rutinasService: RutinasService, private router: Router) {
+    this.routines = [];
+  }
 
   ngOnInit(): void {
+    this.rutinasService.getAllRoutine().then(res => this.routines = res)
   }
 
 }

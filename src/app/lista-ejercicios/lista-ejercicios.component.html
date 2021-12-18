@@ -5,6 +5,7 @@
         <div class="ejerciciosTexto">
             <h3>{{ejercicio.name}}</h3>
             <p>{{ejercicio.description}} </p>
+            <p *ngIf="ejercicio.repetitions !== undefined">{{ejercicio.repetitions}} repeticiones.</p>
         </div>
 
     </div>

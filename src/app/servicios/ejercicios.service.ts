@@ -6,6 +6,7 @@ export interface Ejercicios {
   name?: string;
   description?: string;
   url?: string;
+  repetitions?: string;
 }
 
 

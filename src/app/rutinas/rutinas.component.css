@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.hero{
+   background-image: url(https://cdn.shopify.com/s/files/1/2695/3822/articles/fitness-gym-entrenamiento-personalizado_1600x750.png?v=1612480365);
+    background-color: #999;
+    background-blend-mode: multiply;
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-family: Alfa Slab One;
+    font-size: 5em;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+.container{
+    display: block;
+
+}
+
+
+
+.postRutinas{
+    padding: 60px;
+    margin-top: 40px;
+    font-family: Alfa Slab One;
+    letter-spacing: 3px;
+    font-style: italic;
+    color: white;
+    width: 48%;
+    position: relative;
+    display: inline-block;
+    margin: 1% 1%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+}
+
+.postRutinas .rutinasBotones {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.rutina-nombre{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+
+}

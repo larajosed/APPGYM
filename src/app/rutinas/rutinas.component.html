@@ -1,28 +1,16 @@
-<div class="container">
-
-    <select class="form-control" class="btn btn-dark">
-        <option value="todos">Rutinas</option>
-        <option value="ocio">Principiante</option>
-        <option value="trabajo">Intermedio</option>
-        <option value="hogar">Avanzado</option>
-        <option value="deportes">Tren superior</option>
-        <option value="otros">Tren Inferior</option>
-    </select>
-
-    <!-- <div class="Post">
-        <p>Grupo Muscular:</p>
-        <p>Descripcion: </p>
-        <img src="" alt="Imagen">
-
-    </div> -->
-
+<div class="hero">
+    <span>RUTINAS DE ENTRENAMIENTO</span>
 </div>
 
 
-<!-- 
-(change)="onChangeCategoria($event)" select class
+<div class="container">
 
-
-*ngFor="let postItem of arrPost" class postItem
-
-*ngIf="postItem.imagen != null" img -->
+    <a href="ejercicios/rutina/{{rutina.id}}" *ngFor="let rutina of routines">
+        <div class="postRutinas" style="background-image: url({{rutina.image}});">
+            <div class="rutinasBotones">
+                <div class="rutina-nombre">{{rutina.name}}
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
