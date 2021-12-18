@@ -13,6 +13,7 @@ import { LoginComponent } from './usuarios/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './modal/modal.component';
+import { ListaEjerciciosComponent } from './lista-ejercicios/lista-ejercicios.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ModalComponent } from './modal/modal.component';
     LoginComponent,
     HomeComponent,
     ModalComponent,
+    ListaEjerciciosComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,43 @@
+
+
+.postEjercicios{
+    max-width: 1024px;
+    padding: 40px;
+    display: flex;
+    border: 1px black solid;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    align-items: center; 
+}
+
+.ejerciciosTexto{
+margin-left: 10px;
+}
+
+.postEjercicios img{
+   max-width: 400px;
+
+}
+
+.postEjercicios:nth-child(2n) {
+    flex-direction: row-reverse;
+    
+}
+
+.postEjercicios:nth-child(2n) .ejerciciosTexto {
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: right;
+    
+}
+img{
+    width: 350px;
+}
+
+h3{
+    padding: 10px;
+
+}

@@ -1,0 +1,11 @@
+<div class="container">
+
+    <div class="postEjercicios" *ngFor="let ejercicio of arrEjercicios">
+        <img src="{{ejercicio.url}}" alt="Imagen">
+        <div class="ejerciciosTexto">
+            <h3>{{ejercicio.name}}</h3>
+            <p>{{ejercicio.description}} </p>
+        </div>
+
+    </div>
+</div>

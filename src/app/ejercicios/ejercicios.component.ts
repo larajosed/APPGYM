@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Ejercicios, EjerciciosService } from '../servicios/ejercicios.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ejercicios',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjerciciosComponent implements OnInit {
 
-  constructor() { }
+  arrEjercicios: Ejercicios[];
 
-  ngOnInit(): void {
+  constructor(private ejerciciosService: EjerciciosService, private router: Router) {
+    this.arrEjercicios = [];
   }
 
+  ngOnInit(): void {
+    this.ejerciciosService.getAllEjercicios().then(res => this.arrEjercicios = res);
+  }
+
+  onChangeName($event: any): void {
+    const grupoMuscularId = $event.target.value;
+    if (grupoMuscularId === '0') {
+      this.ejerciciosService.getAllEjercicios().then(res => this.arrEjercicios = res);
+    } else {
+      this.ejerciciosService.getByGroupMuscle(grupoMuscularId).then(res => this.arrEjercicios = res);
+    }
+  }
 }
