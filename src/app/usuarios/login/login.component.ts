@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { CanActivate, Router } from '@angular/router';
 import { UsuariosService } from 'src/app/servicios/usuarios.service';
 import { ModalComponent } from 'src/app/modal/modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-login',
@@ -39,7 +40,7 @@ export class LoginComponent implements OnInit {
           const modal = this.modalService.open(ModalComponent);
           modal.componentInstance.title = "Login Correcto";
           modal.componentInstance.content = "Bienvenido a MyGymApp";
-          this.usuariosService.logged(true);
+          this.usuariosService.setUserSession(response);
           modal.result.then(result => {
             this.router.navigate(['/ejercicios']);
           })

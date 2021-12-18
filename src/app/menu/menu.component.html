@@ -2,10 +2,13 @@
     <div class="container">
         <ul class="navbar-nav">
             <li [routerLink]="['/home']">Home</li>
-            <li [routerLink]="['/registro']">Registro</li>
-            <li [routerLink]="['/login']">Login</li>
-            <li [routerLink]="['/ejercicios']">Ejercicios</li>
-            <li [routerLink]="['/rutinas']">Rutinas</li>
+            <li *ngIf="!hasUser()" [routerLink]="['/registro']">Registro</li>
+            <li *ngIf="!hasUser()" [routerLink]="['/login']">Login</li>
+            <li *ngIf="hasUser()" [routerLink]="['/ejercicios']">Ejercicios</li>
+            <li *ngIf="hasUser()" [routerLink]="['/rutinas']">Rutinas</li>
         </ul>
+        <div *ngIf="hasUser()">Bienvenido {{getLoggedUser().nombre}}
+            <div (click)="logOut()">Cerrar sesión</div>
+        </div>
     </div>
 </nav>

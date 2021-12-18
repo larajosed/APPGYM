@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './modal/modal.component';
 import { ListaEjerciciosComponent } from './lista-ejercicios/lista-ejercicios.component';
 import { EjerciciosRutinaComponent } from './ejercicios-rutina/ejercicios-rutina.component';
+import { ActivateGuardComponent } from './activate-guard/activate-guard.component';
+import { AccesoNoPermitidoComponent } from './acceso-no-permitido/acceso-no-permitido.component';
 
 
 @NgModule({
@@ -30,12 +32,14 @@ import { EjerciciosRutinaComponent } from './ejercicios-rutina/ejercicios-rutina
     ModalComponent,
     ListaEjerciciosComponent,
     EjerciciosRutinaComponent,
+    ActivateGuardComponent,
+    AccesoNoPermitidoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, ReactiveFormsModule, HttpClientModule
   ],
-  providers: [],
+  providers: [ActivateGuardComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
