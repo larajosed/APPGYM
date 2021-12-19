@@ -31,5 +31,4 @@ export class RutinasService {
     const parameters = { routine: routineId }
     return firstValueFrom(this.httpClient.get(`${this.baseUrl}/ejercicios`, { params: parameters }))
   }
-
 }

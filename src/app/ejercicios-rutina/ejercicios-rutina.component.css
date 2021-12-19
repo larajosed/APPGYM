@@ -9,4 +9,26 @@
 .botonVolver a{
     color: white;
     letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.botonVolver a:hover{
+    color: rgb(241, 121, 0);
+}
+
+.header{
+   background-image:  url('../../assets/header/header-rutinas-ejercicios.jpg');
+}
+
+.nameRoutine{
+
+color: white;
+font-family: Alfa Slab One;
+letter-spacing: 2px;
+font-size: 20px;
+
+}
+
+.nameRoutine-container{
+background-color: black;
 }
