@@ -26,4 +26,12 @@ li:hover{
     background-color: rgb(241, 121, 0);
 }
 
- 
+.welcomeUser{
+   color:rgb(241, 121, 0);
+   font-size: 11px;
+   letter-spacing: 0.5px;
+   }
+
+.closeSession{
+    cursor: pointer;
+}

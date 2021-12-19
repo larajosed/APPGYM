@@ -1,10 +1,10 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 .hero{
-   background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/08/21/15348461218161.jpg);
+   background-image: url('../../assets/header/header-home.jpg');
     background-color: #999;
     background-blend-mode: multiply;
-    height: 60vh;
+    height: 500px;
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -26,7 +26,7 @@ h1{
    color: white;
    margin-top: 55px;
    letter-spacing: 2px;
-   font-size: 30px; 
+   font-size: 30px;
 }
 
 

@@ -2,8 +2,11 @@
     background-color: #212529;
     padding: 5px;
     margin-bottom: 20px;
+    
 }
 
+
+
 .header{
-   background-image: url(https://aquasportsgrancanaria.com/wp-content/uploads/hiit-o-entrenamiento-intervalico-de-alta-intensidad.jpg);
+   background-image:  url('../../assets/header/header-ejercicios.jpg');;
 }

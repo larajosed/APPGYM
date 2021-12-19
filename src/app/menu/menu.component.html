@@ -7,8 +7,8 @@
             <li *ngIf="hasUser()" [routerLink]="['/ejercicios']">Ejercicios</li>
             <li *ngIf="hasUser()" [routerLink]="['/rutinas']">Rutinas</li>
         </ul>
-        <div *ngIf="hasUser()">Bienvenido {{getLoggedUser().nombre}}
-            <div (click)="logOut()">Cerrar sesión</div>
+        <div class="welcomeUser" *ngIf="hasUser()">Bienvenido {{getLoggedUser().nombre}}
+            <div class="closeSession" (click)="logOut()"><b>Cerrar sesión</b></div>
         </div>
     </div>
 </nav>

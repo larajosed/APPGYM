@@ -2,27 +2,42 @@
 
 .postEjercicios{
     max-width: 1024px;
-    padding: 40px;
-    display: flex;
     border: 1px black solid;
-    position: relative;
     margin: 0 auto;
     margin-bottom: 20px;
     background-color: black;
     color: white;
-    align-items: center; 
+    background-image:url(https://img.besthqwallpapers.com/Uploads/20-3-2020/125750/metal-grid-pattern-gray-metal-background-metal-textures-metal-grid-metal-dotted-texture.jpg);
+ /* background-image: url(https://aceroscontinental.mx/wp-content/uploads/2013/05/lamina_antiderrapante.jpg); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.postEjercicios-content {
+    background: linear-gradient(0.25turn, rgba(0,0,0,1), rgba(0,0,0,0.20));
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px;
 }
 
 .ejerciciosTexto{
-margin-left: 10px;
+    margin-left: 10px;
+    display: inline-block;
 }
+ .ejerciciosTexto h3{
+     font-family: Alfa Slab One;
+     letter-spacing: 0.5px;
+ }
 
 .postEjercicios img{
    max-width: 400px;
 
 }
 
-.postEjercicios:nth-child(2n) {
+.postEjercicios:nth-child(2n) .postEjercicios-content {
     flex-direction: row-reverse;
     
 }

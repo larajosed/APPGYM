@@ -1,3 +1,12 @@
 .botonVolver{
-    background-color: black;
+    background-color: #212529;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    }
+
+.botonVolver a{
+    color: white;
+    letter-spacing: 0.5px;
 }
