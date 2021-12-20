@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-4 offset-md-4">
+        <h3 class="mb-3">Agregar Ejercicio</h3>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Descripción</label>
+                <input type="text" class="form-control" formControlName="description">
+            </div>
+            <div class="mb-3">
+                <label>Url</label>
+                <input type="texto" formControlName="url" class="form-control" />
+            </div>
+
+            <input type="submit" class="btn btn-dark" value="Agregar" [disabled]="!formulario.valid">
+        </form>
+    </div>
+</div>

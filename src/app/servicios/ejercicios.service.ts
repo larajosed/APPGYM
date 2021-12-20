@@ -17,8 +17,10 @@ export class EjerciciosService {
 
   private baseUrl: string;
 
+
   constructor(private httpClient: HttpClient) {
     this.baseUrl = 'http://localhost:3000/api/ejercicios';
+
   }
 
   getAllEjercicios(): Promise<any> {
@@ -30,5 +32,10 @@ export class EjerciciosService {
     const parameters = { grupoMuscular: grupoMuscularId }
     return firstValueFrom(this.httpClient.get(`${this.baseUrl}/muscle`, { params: parameters }))
   }
+
+
+  addExcercise(formValues: any): Promise<any> {
+    return firstValueFrom(this.httpClient.post(`${this.baseUrl}/add`, formValues));
+  };
 
 }

@@ -148,15 +148,18 @@ text-align: center;
        color: white;
        margin-bottom: 71px;
        padding: 30px;
+       
    }
 
 
 .contactoClientes i{
        width: 40px;
-       padding: 10px;
+       padding: 15px;
        height: 30px;
        font-weight: 10px;
        font-size: 20px;
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       letter-spacing: 1px;
 }
 
 .comentarios-clientes-container{

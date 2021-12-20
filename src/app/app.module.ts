@@ -17,6 +17,7 @@ import { ListaEjerciciosComponent } from './lista-ejercicios/lista-ejercicios.co
 import { EjerciciosRutinaComponent } from './ejercicios-rutina/ejercicios-rutina.component';
 import { ActivateGuardComponent } from './activate-guard/activate-guard.component';
 import { AccesoNoPermitidoComponent } from './acceso-no-permitido/acceso-no-permitido.component';
+import { AgregarejerciciosComponent } from './agregarejercicios/agregarejercicios.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { AccesoNoPermitidoComponent } from './acceso-no-permitido/acceso-no-perm
     EjerciciosRutinaComponent,
     ActivateGuardComponent,
     AccesoNoPermitidoComponent,
+    AgregarejerciciosComponent,
   ],
   imports: [
     BrowserModule,
