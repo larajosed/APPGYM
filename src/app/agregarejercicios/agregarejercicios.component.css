@@ -1,0 +1,10 @@
+.container{
+background-image: url("../../assets/background/imagen-3.png");
+background-repeat: no-repeat;
+min-height: calc(100vh - 80px);
+background-position-x: right;
+}
+
+.row{
+    padding: 20px;
+}

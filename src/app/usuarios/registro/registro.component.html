@@ -1,73 +1,75 @@
-<div class="row">
-    <div class="col-4 offset-md-4">
-        <h3 class="mb-3">REGISTRO</h3>
-        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-            <div class="mb-3">
-                <label for="" class="form-label">Nombre</label>
-                <input type="text" class="form-control" formControlName="nombre">
-                <p class="alert alert-danger"
-                    *ngIf="formulario.get('nombre')?.hasError('required') && formulario.get('nombre')?.touched">
-                    El campo nombre es requerido
-                </p>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Apellidos</label>
-                <input type="text" class="form-control" formControlName="apellidos">
-                <p class="alert alert-danger"
-                    *ngIf="formulario.get('apellidos')?.hasError('required') && formulario.get('apellidos')?.touched">
-                    El campo apellidos es requerido
-                </p>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="text" class="form-control" formControlName="email">
-                <p class="alert alert-danger" *ngIf="checkError('email', 'required')">
-                    el Email es requerido
-                </p>
-                <p class="alert alert-danger" *ngIf="checkError('email', 'pattern')">
-                    el email debe de tener un formato correcto
-                </p>
-                <div id="emailHelp" class="form-text">Nunca compartiremos su email.</div>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Username</label>
-                <input type="text" class="form-control" formControlName="username">
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label">Password</label>
-                <input type="password" class="form-control" formControlName="password">
-                <span id="passwordHelpInline" class="form-text">
-                    La contraseña debe tener entre 8-20 caracteres.
-                </span>
-                <p class="alert alert-danger"
-                    *ngIf="formulario.get('password')?.hasError('required') && formulario.get('password')?.touched">
-                    El campo password es requerido
-                </p>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label">Repite Password</label>
-                <input type="password" class="form-control" formControlName="repite_password">
-                <p class="alert alert-danger"
-                    *ngIf="formulario.hasError('passwordvalidator') && formulario.get('repite_password')?.value != formulario.get('password')?.value">
-                    Las password no coinciden
-                </p>
+<div class="container">
+    <div class="row">
+        <div class="col-4 offset-md-4">
+            <h3 class="mb-3">REGISTRO</h3>
+            <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" formControlName="nombre">
+                    <p class="alert alert-danger"
+                        *ngIf="formulario.get('nombre')?.hasError('required') && formulario.get('nombre')?.touched">
+                        El campo nombre es requerido
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" formControlName="apellidos">
+                    <p class="alert alert-danger"
+                        *ngIf="formulario.get('apellidos')?.hasError('required') && formulario.get('apellidos')?.touched">
+                        El campo apellidos es requerido
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" formControlName="email">
+                    <p class="alert alert-danger" *ngIf="checkError('email', 'required')">
+                        el Email es requerido
+                    </p>
+                    <p class="alert alert-danger" *ngIf="checkError('email', 'pattern')">
+                        el email debe de tener un formato correcto
+                    </p>
+                    <div id="emailHelp" class="form-text">Nunca compartiremos su email.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" formControlName="username">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" class="form-control" formControlName="password">
+                    <span id="passwordHelpInline" class="form-text">
+                        La contraseña debe tener entre 8-20 caracteres.
+                    </span>
+                    <p class="alert alert-danger"
+                        *ngIf="formulario.get('password')?.hasError('required') && formulario.get('password')?.touched">
+                        El campo password es requerido
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Repite Password</label>
+                    <input type="password" class="form-control" formControlName="repite_password">
+                    <p class="alert alert-danger"
+                        *ngIf="formulario.hasError('passwordvalidator') && formulario.get('repite_password')?.value != formulario.get('password')?.value">
+                        Las password no coinciden
+                    </p>
 
-            </div>
-            <select class=" form-select" aria-label="Default select example">
-                <option selected>Genero</option>
-                <option value="1">Hombre</option>
-                <option value="2">Mujer</option>
-            </select>
-            <div class="mb-3">
-                <label class="form-label">Fecha de nacimiento</label>
-                <input type="date" class="form-control" formControlName="fecha_nacimiento">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Direccion</label>
-                <input type="text" class="form-control" formControlName="direccion">
-            </div>
+                </div>
+                <select class=" form-select" aria-label="Default select example">
+                    <option selected>Genero</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                </select>
+                <div class="mb-3">
+                    <label class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" formControlName="fecha_nacimiento">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Direccion</label>
+                    <input type="text" class="form-control" formControlName="direccion">
+                </div>
 
-            <input type="submit" class="btn btn-dark" value="Registrarse" [disabled]="!formulario.valid">
-        </form>
+                <input type="submit" class="btn btn-dark" value="Registrarse" [disabled]="!formulario.valid">
+            </form>
+        </div>
     </div>
 </div>

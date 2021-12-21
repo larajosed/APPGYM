@@ -23,3 +23,5 @@
     font-style: italic;
     letter-spacing: 5px;
 }
+
+body { min-height: 100vh; }

@@ -1,0 +1,12 @@
+.container{
+  background-image: url("../../../assets/background/objetivos-2.png");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: right;
+
+}
+
+.row{
+    padding: 20px;
+}
+
