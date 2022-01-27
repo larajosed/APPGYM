@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <ul class="navbar-nav">
+            <li [routerLink]="['/home']">Home</li>
+            <li *ngIf="!hasUser()" [routerLink]="['/registro']">Registro</li>
+            <li *ngIf="!hasUser()" [routerLink]="['/login']">Login</li>
+            <li *ngIf="hasUser()" [routerLink]="['/ejercicios']">Ejercicios</li>
+            <li *ngIf="hasUser()" [routerLink]="['/rutinas']">Rutinas</li>
+            <li *ngIf="hasUser()" [routerLink]="['ejercicios/añadir']">Agregar ejercicios</li>
+        </ul>
+        <div class="welcomeUser" *ngIf="hasUser()">Bienvenido {{getLoggedUser().nombre}}
+            <div class="closeSession" (click)="logOut()"><b>Cerrar sesión</b></div>
+        </div>
+    </div>
+</nav>

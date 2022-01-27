@@ -1,0 +1,43 @@
+.container{
+    display: block;
+
+}
+
+.postRutinas{
+    padding: 60px;
+    margin-top: 40px;
+    font-family: Alfa Slab One;
+    letter-spacing: 3px;
+    font-style: italic;
+    color: white;
+    width: 48%;
+    position: relative;
+    display: inline-block;
+    margin: 1% 1%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+}
+
+.postRutinas .rutinasBotones {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.rutina-nombre{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+}
+
+.header{
+   background-image:  url('../../assets/header/header-rutinas.png');
+}

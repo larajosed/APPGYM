@@ -1,0 +1,23 @@
+<div class="header">
+    <span>EJERCICIOS</span>
+</div>
+
+
+<div class="barra-opciones-ejercicios">
+    <div class="container">
+        <select class="form-control" (change)="onChangeName($event)" class="btn btn-dark">
+            <option value="0">Ejercicios</option>
+            <option value="1">Biceps y Triceps</option>
+            <option value="2">Hombros</option>
+            <option value="3">Pectorales</option>
+            <option value="4">Espalda</option>
+            <option value="5">Piernas</option>
+            <option value="6">Abdominales</option>
+            <option value="7">Gluteos</option>
+        </select>
+    </div>
+</div>
+
+<div class="container">
+    <app-lista-ejercicios [arrEjercicios]="arrEjercicios"></app-lista-ejercicios>
+</div>

@@ -1,0 +1,210 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.hero{
+   background-image: url('../../assets/header/header-home.jpg');
+    background-color: #999;
+    background-blend-mode: multiply;
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+
+h1{
+    font-family: Alfa Slab One;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 30px;
+    max-width: 600px;
+    letter-spacing: 2px;
+
+}
+
+.hero h3 {
+   font-family: Alfa Slab One;
+   color: white;
+   margin-top: 55px;
+   letter-spacing: 2px;
+   font-size: 30px;
+}
+
+
+.hero p{
+    color:white;
+    font-size: 18px;
+    width: 500px;
+    margin-top: 45px;
+}
+
+.hero p span{
+    color:rgb(241, 121, 0);
+    font-size: 20px;
+}
+
+/*inicio del main */
+
+.titulo {
+    text-align: center;
+    margin-top: 40px;
+     font-size: 14px;
+}
+.section-title h2{
+    width: 500px;
+}
+
+#info{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 40px;
+}
+
+
+#iconos1{
+ width: 100px;
+ display: inline-block;
+ margin-top: 5px;
+}
+
+.container-cajas-caracteristicas-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.columna-caja-caracteristicas-app {
+    width: calc(100% / 3);
+    display: inline-block;
+}
+
+.containerColum{
+    background-color: rgb(241, 239, 239);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.containerColum h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.containerColum p{
+    text-align: center;
+    padding: 20px;
+}
+
+.containerColum h2{
+    text-align: center;
+}
+
+.containerColum h2:hover{
+    color: rgb(241, 121, 0);
+}
+
+.containerColum .appPhone{
+    width: 100%;
+    border-radius: 80px;
+}
+
+.containerClientes{
+padding: 30px;
+text-align: center;
+
+
+}
+.containerClientes h2{
+    margin-top: 10px;
+    margin-top: 30px;
+}
+
+.containerClientes .queDicenLosClientesText {
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+    
+}
+
+.contactoClientes .clientesTexto{
+    text-align: left;
+}
+
+.containerClientes .fotoCliente{
+    width: 170px;
+    padding: 15px;
+    border-radius: 100%;
+    height: 170px;
+}
+
+.cliente-info{
+    text-align: right;
+}
+
+.cliente-info h3{
+    font-weight: 8px bold;
+}
+
+.contactoClientes {
+       background-color: black;
+       color: white;
+       margin-bottom: 71px;
+       padding: 30px;
+       
+   }
+
+
+.contactoClientes i{
+       width: 40px;
+       padding: 15px;
+       height: 30px;
+       font-weight: 10px;
+       font-size: 20px;
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       letter-spacing: 1px;
+}
+
+.comentarios-clientes-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.que-dicen-clientes{
+    width: calc(100% / 3);
+    display: inline-block;
+}
+/* inicio footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em 0.625em;
+    text-align: center;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(241, 121, 0);
+}
+
+
+
+
+@media(max-width: 720px) {
+    .columna-caja-caracteristicas-app  {
+        width: 100%;
+    }
+    .columna-caja-caracteristicas-app:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    
+    .que-dicen-clientes{
+        width: 100%;
+    }
+}

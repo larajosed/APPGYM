@@ -1,0 +1,16 @@
+<div class="header">
+    <span>RUTINAS DE ENTRENAMIENTO</span>
+</div>
+
+
+<div class="container">
+
+    <a href="ejercicios/rutina/{{rutina.id}}" *ngFor="let rutina of routines">
+        <div class="postRutinas" style="background-image: url({{rutina.image}});">
+            <div class="rutinasBotones">
+                <div class="rutina-nombre">{{rutina.name}}
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
